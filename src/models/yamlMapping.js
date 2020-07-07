@@ -18,7 +18,7 @@ const innerState = {
   hasName: true,
   hasPrefix: true,
   annotations: [],
-  structName: 'Go',
+  structName: 'Tars',
 };
 
 export default {

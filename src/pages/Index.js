@@ -60,8 +60,10 @@ class Index extends React.PureComponent {
         </div>
       </Content>
       <Footer style={{textAlign: 'center'}}>
-        To Go ©2018 Created by <a href={'https://github.com/ljun20160606/jsonToGo'}><Icon
-        type="github"/> ljun20160606</a>
+
+        基于jsonToGo Created by <a href={'https://github.com/yijie8/jsonToTars'}><Icon
+        type="github"/> yijie8</a>
+
       </Footer>
     </Layout>);
   }
