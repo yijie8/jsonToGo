@@ -26,7 +26,7 @@ const innerState = {
 };
 
 export default {
-  namespace: 'mysqlMapping',
+  namespace: 'mysqlStructMapping',
 
   state: {
     ...onChange(innerState)

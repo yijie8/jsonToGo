@@ -5,12 +5,12 @@ const jsonOption = {
 // to struct
 const buildin = {
   string: 'string',
-  bytes: '[]byte',
-  int: 'int', int8: 'int8', int16: 'int16', int32: 'int32', int64: 'int64',
-  uint: 'uint', uint8: 'uint8', uint16: 'uint16', uint32: 'uint32', uint64: 'uint64',
+  bytes: 'byte',
+  int: 'int', int8: 'short', int16: 'int', int32: 'int', int64: 'long',
+  uint: 'Unsigned int', uint8: 'unsigned short', uint16: 'Unsigned int', uint32: 'Unsigned int', uint64: 'Unsigned int',
   bool: 'bool',
-  float32: 'float32', float64: 'float64',
-  interface: 'interface{}',
+  float32: 'float', float64: 'float',
+  interface: 'string',
   time: 'time.Time',
   slice: 'slice',
   struct: 'struct',

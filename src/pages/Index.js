@@ -24,7 +24,7 @@ class Index extends React.PureComponent {
   render() {
     const {onInput, props} = this;
     const {match} = props;
-    const items = ['json', 'yaml', 'mysql'];
+    const items = ['json2tars','struct2tars','mysql2tars','json', 'yaml', 'mysql'];
     return (<Layout className="layout" style={{minHeight: '100vh'}}>
       <Header>
         <div className="logo"/>
@@ -71,6 +71,6 @@ class Index extends React.PureComponent {
 
 Index.propTypes = {};
 
-export default connect(({jsonMapping, mysqlMapping, yamlMapping}) => ({
-  jsonMapping, mysqlMapping, yamlMapping
+export default connect(({ jsonStructMapping, mysqlStructMapping, yamlStructMapping,jsonTarsMapping,structTarsMapping}) => ({
+  jsonStructMapping, mysqlStructMapping, yamlStructMapping, jsonTarsMapping, structTarsMapping
 }))(Index);

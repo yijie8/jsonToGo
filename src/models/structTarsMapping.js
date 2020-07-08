@@ -1,20 +1,20 @@
+import jsonToGo from "@/services/json-to-go";
 import { onChange } from "@/models/helpers";
-import yamlToGo from '@/services/yaml-to-go'
-import { ALL, YAML, DB, Config, Nested } from '@/services/js-options'
+import { ALL, JSON, DB, Config, Nested } from '@/services/js-options'
 
 const innerState = {
   treeData: [{
     ...ALL,
-    children: [YAML, DB],
+    children: [JSON, DB],
   }, {
     ...Config,
     children: [Nested],
   }],
-  select: [YAML.key],
+  select: [JSON.key],
   input: '',
   show: '',
-  name: 'yaml',
-  showHandler: yamlToGo,
+  name: 'json',
+  showHandler: jsonToGo,
   hasName: true,
   hasPrefix: true,
   annotations: [],
@@ -22,7 +22,7 @@ const innerState = {
 };
 
 export default {
-  namespace: 'yamlMapping',
+  namespace: 'structTarsMapping',
 
   state: {
     ...innerState
