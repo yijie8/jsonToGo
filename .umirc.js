@@ -29,20 +29,20 @@ export default {
   routes: [
     {
       path: '/',
-      redirect: '/json',
+      redirect: '/jsonTars',
     },
     {
-      path: '/json',
+      path: '/jsonTars',
       component: 'Index',
       exact: true,
     },
     {
-      path: '/yaml',
+      path: '/jsonStruct',
       component: 'Index',
       exact: true,
     },
     {
-      path: '/mysql',
+      path: '/mysqlStruct',
       component: 'Index',
       exact: true,
     },

@@ -63,7 +63,7 @@ function jsToTars(scope, typename, options) {
     function parseSlice(array, depth = 0) {
       let sliceLength = array.length;
 
-      append('[]');
+      append('vector<');
 
       switch (sliceLength) {
         case 0:
@@ -130,6 +130,7 @@ function jsToTars(scope, typename, options) {
         default:
           append(sliceType || buildin.interface);
       }
+      append('>');
     }
 
     function parseStruct(object, depth = 0, omitempty = undefined, nullable = undefined) {

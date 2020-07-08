@@ -40,11 +40,12 @@ function isNested(select) {
 
 class Options {
   static data = {
-    tars: {
-      key: 'tars'
-    },
+
     json: {
       key: 'json'
+    },
+    tars: {
+      key: 'tars'
     },
     db: {
       key: 'db',

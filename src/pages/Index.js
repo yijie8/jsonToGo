@@ -24,7 +24,7 @@ class Index extends React.PureComponent {
   render() {
     const {onInput, props} = this;
     const {match} = props;
-    const items = ['json2tars','struct2tars','mysql2tars','json', 'yaml', 'mysql'];
+    const items = ['jsonTars','jsonStruct','mysqlStruct','mysqlTars','structTars','yamlTars','yamlStruct'];
     return (<Layout className="layout" style={{minHeight: '100vh'}}>
       <Header>
         <div className="logo"/>
