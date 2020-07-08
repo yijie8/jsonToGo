@@ -1,5 +1,5 @@
 import Parser from 'sql-ddl-to-json-schema';
-import { buildin as go, format } from './golang';
+import { buildin as go, format } from './tars';
 import { buildin as sql } from './mysql';
 
 // DDL Example
@@ -21,7 +21,7 @@ import { buildin as sql } from './mysql';
 // ) ENGINE MyISAM COMMENT 'All system users';
 // `;
 
-function mysqlToGo(statement, typename, options) {
+function mysqlToTars(statement, typename, options) {
   if (statement.trim() === '') {
     return {
       go: '',
@@ -190,4 +190,4 @@ function parseDataType(datatype) {
   throw new Error(`unknown datatype ${datatype}`)
 }
 
-export default mysqlToGo;
+export default mysqlToTars;

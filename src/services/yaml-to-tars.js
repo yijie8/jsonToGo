@@ -1,7 +1,7 @@
 import yaml from 'js-yaml';
-import jsToGo from './js-to-go';
+import jsToGo from './js-to-tars';
 
-function yamlToGo(json, typename, options) {
+function yamlToTars(json, typename, options) {
   if (json.trim() === '') {
     return {
       go: '',
@@ -19,4 +19,4 @@ function yamlToGo(json, typename, options) {
   return jsToGo(data, typename, options);
 }
 
-export default yamlToGo;
+export default yamlToTars;

@@ -40,11 +40,8 @@ function isNested(select) {
 
 class Options {
   static data = {
-    json2tars: {
+    tars: {
       key: 'tars'
-    },
-    struct2tars: {
-      key: 'struct'
     },
     json: {
       key: 'json'
