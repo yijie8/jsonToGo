@@ -36,15 +36,36 @@ export default {
       component: 'Index',
       exact: true,
     },
+    // 加下面的报错
+    // {
+    //   path: '/mysqlTars',
+    //   component: 'Index',
+    //   exact: true,
+    // },
+    // {
+    //   path: '/yamlTars',
+    //   component: 'Index',
+    //   exact: true,
+    // },
     {
-      path: '/jsonStruct',
+      path: '/structTars',
       component: 'Index',
       exact: true,
     },
-    {
-      path: '/mysqlStruct',
-      component: 'Index',
-      exact: true,
-    },
+    // {
+    //   path: '/jsonStruct',
+    //   component: 'Index',
+    //   exact: true,
+    // },
+    // {
+    //   path: '/mysqlStruct',
+    //   component: 'Index',
+    //   exact: true,
+    // },
+    // {
+    //   path: '/yamlStruct',
+    //   component: 'Index',
+    //   exact: true,
+    // },
   ],
 };

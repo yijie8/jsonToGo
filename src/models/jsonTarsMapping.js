@@ -1,4 +1,4 @@
-import jsonToGo from "@/services/json-to-go";
+import jsonToGo from "@/services/json-to-tars";
 import { onChange } from "@/models/helpers";
 import { ALL, JSON, DB, Config, Nested } from '@/services/js-options'
 

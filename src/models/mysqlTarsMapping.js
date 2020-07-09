@@ -1,4 +1,4 @@
-import mysqlToGo from "@/services/mysql-to-go";
+import mysqlToGo from "@/services/mysql-to-tars";
 import { onChange } from "@/models/helpers";
 import { ALL, YAML, DB, Config, Nested, JSON } from '@/services/js-options'
 

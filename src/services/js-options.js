@@ -4,6 +4,17 @@ const ALL = {
   key: 'all',
 };
 
+const TARS = {
+  title: 'tars',
+  value: 'tars',
+  key: 'tars',
+};
+const STRUCT = {
+  title: 'struct',
+  value: 'struct',
+  key: 'struct',
+};
+
 const JSON = {
   title: 'json',
   value: 'json',
@@ -41,6 +52,9 @@ function isNested(select) {
 class Options {
   static data = {
 
+    struct: {
+      key: 'struct'
+    },
     json: {
       key: 'json'
     },
@@ -70,4 +84,4 @@ class Options {
   }
 }
 
-export { ALL, JSON, DB, YAML, Options, Config, Nested, isNested };
+export { ALL, JSON, DB, YAML, STRUCT, TARS, Options, Config, Nested, isNested };

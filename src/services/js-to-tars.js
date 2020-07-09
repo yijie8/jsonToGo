@@ -63,7 +63,7 @@ function jsToTars(scope, typename, options) {
     function parseSlice(array, depth = 0) {
       let sliceLength = array.length;
 
-      append('vector<');
+      // debugger;
 
       switch (sliceLength) {
         case 0:
@@ -74,6 +74,8 @@ function jsToTars(scope, typename, options) {
           return;
         default:
       }
+
+      append('vector<');
 
       let sliceType = goSliceType(array);
 
